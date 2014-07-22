@@ -37,7 +37,7 @@ class Article
   end
 
   def body_as_html
-    body.split("\n").inject{|paragraph| "<p>#{paragraph}</p>"}
+    body.split("\n").map{|paragraph| "<p>#{paragraph}</p>"}.join("")
   end
 
 end
