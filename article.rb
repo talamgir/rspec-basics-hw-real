@@ -20,7 +20,7 @@ class Article
     string.nil? || string == ""
   end
 
-  def authors_name_starts_with_q
+  def authors_name_starts_with_q?
     @author[0].downcase == "q"
   end
 
